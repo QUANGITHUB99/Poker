@@ -42078,15 +42078,29 @@ button.swiper-pagination-bullet { border-width: medium; border-style: none; bord
 .practice-splash img{width:26%;max-width:260px;height:auto}
 .practice-home{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at 50% 44%,#102b4c 0%,#071a33 48%,#041127 100%)}
 .practice-home::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 22% 28%,#1392cc1c 0 6px,transparent 17px),radial-gradient(circle at 76% 68%,#1689cf14 0 7px,transparent 22px),radial-gradient(circle at 63% 23%,#27b9df12 0 4px,transparent 13px)}
-.practice-home-menu{display:grid;grid-template-columns:1fr 1.3fr 1fr;align-items:center;gap:24px;width:min(1040px,calc(100% - 96px));isolation:isolate}
-.practice-home-menu button{position:relative;box-sizing:border-box;height:clamp(110px,12vw,160px);min-width:0;padding:12px 10px;border:3px solid #a0f4ff;border-radius:19px;transform:skewX(8deg);background:linear-gradient(115deg,#39cfe8 0%,#22abc6 62%,#16859f 100%);color:#15324f;box-shadow:0 0 12px #54eaff88,0 0 30px #24bedc35,inset 0 3px 0 #fff5,inset 0 -3px 0 #0e778466;pointer-events:auto!important;cursor:pointer!important}
-.practice-home-menu button::before{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(circle at 80% 20%,#b8ffff88 0 4px,transparent 5px),radial-gradient(circle at 88% 30%,#b8ffff66 0 3px,transparent 4px),radial-gradient(circle at 12% 68%,#b8ffff55 0 3px,transparent 4px)}
-.practice-home-menu button span{position:relative;display:block;transform:skewX(-8deg) scaleX(.88);font-family:Impact,Haettenschweiler,'Arial Narrow',sans-serif;font-size:clamp(29px,4.3vw,57px);font-weight:900;line-height:1;letter-spacing:.4px;text-shadow:0 3px #b6f7ff70}
-.practice-home-menu .practice-home-play{height:clamp(132px,14.5vw,190px);border:4px solid #eff97a;color:#495000;background:linear-gradient(115deg,#f6ff29 0%,#d8e311 45%,#a3ad05 100%);box-shadow:0 0 16px #f6ff4899,0 0 45px #d6e32044,inset 0 4px 0 #fff8,inset 0 -3px 0 #83920555}
-.practice-home-menu .practice-home-play span{font-size:clamp(40px,5.6vw,76px);text-shadow:0 4px #f9ffa066}
+.practice-home-content{position:relative;width:min(400px,calc(100% - 48px));display:flex;flex-direction:column;align-items:center;padding:32px 0}
+.practice-home-logo{display:block;width:230px;max-width:68%;height:auto;margin-bottom:48px;filter:drop-shadow(0 0 28px #c4dfef20)}
+.practice-home-menu{display:flex;flex-direction:column;gap:13px;width:100%}
+.practice-home-menu button{display:flex;align-items:center;justify-content:space-between;box-sizing:border-box;width:100%;height:62px;padding:0 25px;border:1px solid #9fb3c180;border-radius:5px;background:#10213888;color:#f0f4f7;font:700 20px ProximaNovaSemibold,sans-serif;text-align:left;box-shadow:0 0 18px #e0e8ff08;pointer-events:auto!important;cursor:pointer!important}
+.practice-home-menu button span:last-child{font-size:25px;font-weight:400;color:#c1d0da}
+.practice-home-menu .practice-home-play{height:68px;background:linear-gradient(110deg,#f3f4df,#dbe4d4);color:#183446;border-color:#f5f5e4;box-shadow:0 0 26px #dce5d827}
+.practice-home-menu .practice-home-play span:last-child{color:#60777e}
 .practice-home-menu button:hover{filter:brightness(1.12)}
-.practice-home-menu button:focus-visible{outline:3px solid white;outline-offset:8px}
-@media(max-width:640px){.practice-home-menu{grid-template-columns:1fr;justify-items:center;gap:22px;width:calc(100% - 64px)}.practice-home-menu button{width:min(290px,90%);height:104px}.practice-home-menu .practice-home-play{width:min(340px,100%);height:124px}.practice-home-menu button span{font-size:40px}.practice-home-menu .practice-home-play span{font-size:55px}}
+.practice-home-menu button:focus-visible{outline:2px solid #f6f7e9;outline-offset:5px}
+@media(max-height:520px){.practice-home-content{padding:18px 0}.practice-home-logo{width:170px;margin-bottom:24px}.practice-home-menu button{height:50px}.practice-home-menu .practice-home-play{height:54px}}
+.practice-compact-lobby.LobbyContainer{position:absolute!important;inset:0!important;box-sizing:border-box!important;display:grid!important;grid-template-rows:auto auto auto minmax(0,1fr)!important;gap:14px!important;padding:24px!important;background:#132630!important;font-size:16px!important;overflow:hidden!important}
+.practice-lobby-header{display:flex;align-items:center;gap:18px;min-height:42px;color:#eaf2f7}
+.practice-lobby-header button{width:38px;height:38px;border:1px solid #425b68;border-radius:6px;color:#d8e6ee;background:#1d3745;font-size:23px;pointer-events:auto!important;cursor:pointer!important}
+.practice-lobby-header img{width:86px;height:auto}
+.practice-lobby-header h1{font:700 20px ProximaNovaSemibold,sans-serif;margin:0;border-left:1px solid #3b5360;padding-left:18px}
+.practice-lobby-balance{margin-left:auto;color:#b8cdd9;font:16px ProximaNovaSemibold,sans-serif}
+.practice-family-tabs{display:flex;gap:8px}
+.practice-family-button{position:relative!important;width:128px!important;height:42px!important;border:1px solid #365261;border-radius:7px;background:#1a3341;color:#9fbdce;font:16px ProximaNovaSemibold,sans-serif;padding:0!important;pointer-events:auto!important;cursor:pointer!important}
+.practice-family-button.TabButton_selected{background:#36596d;color:#fff;border-color:#5b8197}
+.practice-compact-lobby&gt;.LobbyBottomTablesFiltersContainer,.practice-compact-lobby&gt;.LobbyBottomTournamentsFiltersContainer{position:relative!important;inset:auto!important;height:44px!important;width:100%!important;margin:0!important}
+.practice-compact-lobby&gt;.LobbyTablesContainer,.practice-compact-lobby&gt;.LobbyTournamentsContainer{position:relative!important;inset:auto!important;min-height:0!important;height:100%!important;width:100%!important;margin:0!important}
+.practice-compact-lobby .practice-resume{bottom:28px!important}
+@media(max-width:700px){.practice-compact-lobby.LobbyContainer{padding:14px!important;gap:10px!important;font-size:13px!important}.practice-lobby-header{gap:12px}.practice-lobby-header h1{font-size:17px;padding-left:12px}.practice-lobby-balance{font-size:13px}.practice-family-button{width:110px!important;height:38px!important}}
 .practice-tourneys{position:absolute;inset:0}
 .practice-tourneys .trct-action .button{pointer-events:none!important;cursor:default!important}
 .practice-tourneys .LobbyBottomTournamentsFiltersContainer{pointer-events:none}
@@ -42447,7 +42461,14 @@ function showSplash(){
 function showHome(){
   clearTimeout(splashTimer);stopTimers();closeDialog();if(active)active.clockKey=null;
   view='home';screens.style.transform='';screens.style.width='';screens.style.height='';
-  screens.innerHTML='&lt;section class=&quot;practice-home&quot; aria-label=&quot;Poker home&quot;&gt;&lt;nav class=&quot;practice-home-menu&quot; aria-label=&quot;Choose a poker game&quot;&gt;&lt;button class=&quot;practice-home-tables&quot; data-practice=&quot;lobby&quot; aria-label=&quot;Tables&quot;&gt;&lt;span&gt;TABLES&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;practice-home-play&quot; data-practice=&quot;quickplay&quot; aria-label=&quot;Play&quot;&gt;&lt;span&gt;PLAY&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;practice-home-tourneys&quot; data-practice=&quot;tourneys&quot; aria-label=&quot;Tourneys&quot;&gt;&lt;span&gt;TOURNEYS&lt;/span&gt;&lt;/button&gt;&lt;/nav&gt;&lt;/section&gt;';
+  screens.innerHTML=`&lt;section class=&quot;practice-home&quot; aria-label=&quot;Poker home&quot;&gt;&lt;div class=&quot;practice-home-content&quot;&gt;&lt;img class=&quot;practice-home-logo&quot; src=&quot;${PRACTICE_DATA.logo}&quot; alt=&quot;Stake&quot;&gt;&lt;nav class=&quot;practice-home-menu&quot; aria-label=&quot;Choose a poker game&quot;&gt;&lt;button class=&quot;practice-home-play&quot; data-practice=&quot;quickplay&quot; aria-label=&quot;Play&quot;&gt;&lt;span&gt;Play&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot;&gt;↗&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;practice-home-tables&quot; data-practice=&quot;lobby&quot; aria-label=&quot;Tables&quot;&gt;&lt;span&gt;Tables&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot;&gt;≡&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;practice-home-tourneys&quot; data-practice=&quot;tourneys&quot; aria-label=&quot;Tourneys&quot;&gt;&lt;span&gt;Tourneys&lt;/span&gt;&lt;span aria-hidden=&quot;true&quot;&gt;→&lt;/span&gt;&lt;/button&gt;&lt;/nav&gt;&lt;/div&gt;&lt;/section&gt;`;
+}
+function compactLobby(scope,tourneys=false){
+  const filters=$(tourneys?'.LobbyBottomTournamentsFiltersContainer':'.LobbyBottomTablesFiltersContainer',scope);
+  const content=$(tourneys?'.LobbyTournamentsContainer':'.LobbyTablesContainer',scope);
+  filters.remove();content.remove();scope.classList.add('practice-compact-lobby');scope.dataset.kind=tourneys?'tourneys':'tables';
+  scope.innerHTML=`&lt;header class=&quot;practice-lobby-header&quot;&gt;&lt;button data-practice=&quot;home&quot; aria-label=&quot;Poker home&quot;&gt;←&lt;/button&gt;&lt;img src=&quot;${PRACTICE_DATA.logo}&quot; alt=&quot;Stake&quot;&gt;&lt;h1&gt;${tourneys?'Tourneys':'Tables'}&lt;/h1&gt;&lt;span class=&quot;practice-lobby-balance&quot; aria-label=&quot;Virtual chip balance&quot;&gt;${currency(wallet)}&lt;/span&gt;&lt;/header&gt;&lt;nav class=&quot;practice-family-tabs&quot; aria-label=&quot;Poker variants&quot;&gt;&lt;button class=&quot;TabButtonsRow__button practice-family-button&quot; data-practice=&quot;family&quot; data-family=&quot;holdem&quot; aria-label=&quot;Hold'em&quot;&gt;&lt;span class=&quot;TabButton__text&quot;&gt;Hold'em&lt;/span&gt;&lt;/button&gt;&lt;button class=&quot;TabButtonsRow__button practice-family-button&quot; data-practice=&quot;family&quot; data-family=&quot;omaha&quot; aria-label=&quot;Omaha&quot;&gt;&lt;span class=&quot;TabButton__text&quot;&gt;Omaha&lt;/span&gt;&lt;/button&gt;&lt;/nav&gt;`;
+  scope.append(filters,content);
 }
 function bindLobbyNavigation(scope){
   const menu=$('.menu_button',scope);if(menu){menu.dataset.practice='home';menu.setAttribute('aria-label','Poker home');menu.setAttribute('role','button');menu.setAttribute('tabindex','0');}
@@ -42462,7 +42483,7 @@ function bindLobbyNavigation(scope){
 function showTourneys(){
   clearTimeout(splashTimer);stopTimers();closeDialog();if(active)active.clockKey=null;
   view='tourneys';screens.style.transform='';screens.style.width='';screens.style.height='';screens.innerHTML='&lt;div class=&quot;practice-tourneys&quot;&gt;'+PRACTICE_DATA.tourneys+'&lt;/div&gt;';
-  bindLobbyNavigation($('.LobbyContainer'));updateBalance();
+  compactLobby($('.LobbyContainer'),true);bindLobbyNavigation($('.LobbyContainer'));updateBalance();
 }
 function chooseQuickTable(list,balance,joined=[]){
   const available=list.filter(t=&gt;!t.full||joined.includes(t.id)).sort((a,b)=&gt;a.bb-b.bb||a.min-b.min);
@@ -42507,6 +42528,7 @@ function showLobby(){
   if(active)active.clockKey=null;
   stopTimers();view='lobby';screens.style.transform='';screens.style.width='';screens.style.height='';screens.innerHTML=lobbyHTML;
   const scope=$('.LobbyContainer');
+  compactLobby(scope);
   bindLobbyNavigation(scope);
   for(const b of $$('.TabButtonsRow__button',scope)){
     const text=$('.TabButton__text',b)?.textContent.trim();
